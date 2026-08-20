@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tiago Silva Dal Bosco — Resume</title>
+<meta name="description" content="Tiago Silva Dal Bosco - Web Developer, AI Automation Specialist, Founder at TS Digitais. Portfolio of websites built with WordPress, Next.js, SEO and AI automation.">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', -apple-system, system-ui, sans-serif;
+    color: #1e293b; background: #fff;
+    font-size: 8pt; line-height: 1.4;
+  }
+  .page {
+    max-width: 210mm; margin: 0 auto;
+    display: flex; min-height: 297mm;
+  }
+
+  .sidebar {
+    width: 220px; flex-shrink: 0;
+    background: #0f172a; color: #e2e8f0;
+    padding: 10mm 8mm; font-size: 7pt; line-height: 1.5;
+    position: sticky; top: 0; height: 100vh;
+    overflow-y: auto;
+  }
+  .sidebar h1 {
+    font-size: 13pt; font-weight: 700; color: #fff;
+    margin-bottom: 2px; line-height: 1.2;
+  }
+  .sidebar .sub {
+    font-size: 7pt; color: #94a3b8; margin-bottom: 10px; line-height: 1.3;
+  }
+  .sidebar .contact { margin-bottom: 14px; }
+  .sidebar .contact a { color: #7dd3fc; text-decoration: none; display: block; margin-bottom: 4px; }
+  .sidebar .contact a:hover { color: #fff; text-decoration: underline; }
+  .sidebar .sec-title {
+    font-size: 7.5pt; font-weight: 700; color: #fff;
+    text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 1px solid #334155; padding-bottom: 3px;
+    margin: 14px 0 6px;
+  }
+  .sidebar .sec-title:first-of-type { margin-top: 0; }
+  .sidebar .skill {
+    display: inline-block; font-size: 6.5pt;
+    background: #1e293b; color: #cbd5e1;
+    padding: 2px 6px; border-radius: 8px; margin: 1px;
+  }
+  .sidebar .lang { margin-bottom: 2px; }
+  .sidebar .lang strong { color: #fff; }
+  .sidebar .edu { }
+
+  /* Website links in sidebar */
+  .sidebar .site-link {
+    display: block;
+    color: #7dd3fc;
+    text-decoration: none;
+    font-size: 6.5pt;
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius: 4px;
+    background: rgba(125, 211, 252, 0.1);
+    border: 1px solid rgba(125, 211, 252, 0.2);
+    transition: all 0.2s ease;
+  }
+  .sidebar .site-link:hover {
+    background: rgba(125, 211, 252, 0.2);
+    border-color: #7dd3fc;
+    color: #fff;
+    text-decoration: none;
+    transform: translateX(2px);
+  }
+  .sidebar .site-link .site-name {
+    font-weight: 600;
+    color: #fff;
+  }
+  .sidebar .site-link .site-desc {
+    font-size: 5.5pt;
+    color: #94a3b8;
+    margin-top: 1px;
+  }
+  .sidebar .sites-category {
+    font-size: 6pt;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 10px 0 4px;
+  }
+
+  .main {
+    flex: 1; padding: 10mm 12mm;
+    font-size: 8pt; line-height: 1.4;
+  }
+  .section { margin-bottom: 10px; }
+  .section h2 {
+    font-size: 9pt; color: #0f766e;
+    border-bottom: 1.5px solid #e2e8f0; padding-bottom: 3px;
+    margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px;
+  }
+  .entry { margin-bottom: 10px; }
+  .entry .head { display: flex; justify-content: space-between; align-items: baseline; }
+  .entry .role, .entry .dates, .entry .company { font-size: 8pt; }
+  .entry .role { font-weight: 700; }
+  .entry .dates { color: #64748b; white-space: nowrap; margin-left: 8px; }
+  .entry .company { color: #475569; }
+  .entry .desc { margin-top: 2px; }
+  .entry .desc ul { list-style: none; padding-left: 0; }
+  .entry .desc li {
+    position: relative; padding-left: 10px; margin-bottom: 1px;
+  }
+  .entry .desc li::before {
+    content: '\2022'; color: #0f766e;
+    position: absolute; left: 0; font-weight: 700;
+  }
+
+  a { color: #0369a1; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  @media print {
+    body { font-size: 8pt; }
+    .page { max-width: none; }
+    .sidebar { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .sidebar .site-link { border: none; background: none; }
+  }
+
+  @media (max-width: 768px) {
+    .page { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: static; }
+    .main { padding: 10mm; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="sidebar">
+    <h1>Tiago Silva<br>Dal Bosco</h1>
+    <div class="sub">Customer Support & Success<br>Web Developer &middot; AI Automation</div>
+
+    <div class="contact">
+      Florianópolis, SC, Brazil<br>
+      <a href="mailto:tiagocxs.tdb@gmail.com">tiagocxs.tdb@gmail.com</a>
+      <a href="https://wa.me/5548991808295">+55 (48) 99180-8295</a>
+      <a href="https://linkedin.com/in/tiagosilvadb" target="_blank" rel="noopener">linkedin.com/in/tiagosilvadb</a>
+      <a href="https://tsdigitais.com.br" target="_blank" rel="noopener">tsdigitais.com.br</a>
+      <a href="https://github.com/Tiagocxs1" target="_blank" rel="noopener">github.com/Tiagocxs1</a>
+    </div>
+
+    <div class="sec-title">Websites Built</div>
+    
+    <div class="sites-category">Client Projects</div>
+    <a href="https://tsdigitais.com.br" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">TS Digitais</span>
+      <span class="site-desc">Agency portfolio & services — WordPress, Next.js, SEO, AI Automation</span>
+    </a>
+    <a href="https://drarubiacursos.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Cursos Rubia de Carli</span>
+      <span class="site-desc">Course platform — Next.js, Clerk, Prisma, Stripe</span>
+    </a>
+    <a href="https://bruno-vinicius-interiores.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Bruno Vinicius Interiores</span>
+      <span class="site-desc">Interior design portfolio — Static site, optimized performance</span>
+    </a>
+    <a href="https://sitesesseguros-main.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Sites Seguros</span>
+      <span class="site-desc">Insurance comparison platform — Next.js, SEO optimized</span>
+    </a>
+
+    <div class="sites-category">Internal Tools & Platforms</div>
+    <a href="https://dashboard.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Dashboard</span>
+      <span class="site-desc">Analytics & management dashboard — Next.js, Supabase, AI agents</span>
+    </a>
+    <a href="https://guardian-carrossel.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Guardian Carrossel</span>
+      <span class="site-desc">Carousel generator — Remotion, FFmpeg, AI video pipeline</span>
+    </a>
+    <a href="https://guardian-video.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">Guardian Video</span>
+      <span class="site-desc">Video automation platform — Remotion Lambda, AWS, AI</span>
+    </a>
+    <a href="https://aios-core.vercel.app" target="_blank" rel="noopener" class="site-link">
+      <span class="site-name">AIOS Core</span>
+      <span class="site-desc">AI Operating System — Multi-agent, MCP servers, Next.js</span>
+    </a>
+
+    <div class="sec-title">Competencies</div>
+    <div>
+      <span class="skill">WordPress</span>
+      <span class="skill">Next.js</span>
+      <span class="skill">SEO</span>
+      <span class="skill">Python</span>
+      <span class="skill">AI Automation</span>
+      <span class="skill">Figma</span>
+      <span class="skill">Canva</span>
+      <span class="skill">Cloudflare</span>
+      <span class="skill">Vercel</span>
+      <span class="skill">Customer Support</span>
+      <span class="skill">Sales</span>
+      <span class="skill">Social Media</span>
+      <span class="skill">Data Quality</span>
+      <span class="skill">Prompt Engineering</span>
+      <span class="skill">TypeScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Tailwind CSS</span>
+      <span class="skill">Supabase</span>
+      <span class="skill">Git/GitHub</span>
+    </div>
+
+    <div class="sec-title">Languages</div>
+    <div class="lang"><strong>Portuguese</strong> — Native</div>
+    <div class="lang"><strong>Spanish</strong> — C1 Advanced</div>
+    <div class="lang"><strong>English</strong> — B1 Intermediate</div>
+
+    <div class="sec-title">Education</div>
+    <div class="edu">
+      <strong>Technical Degree in Microcomputers</strong><br>
+      SENAI
+    </div>
+  </div>
+
+  <div class="main">
+
+    <div class="section">
+      <h2>Summary</h2>
+      <p>
+        Client-focused professional with 12+ years in sales and support and 6 years building websites.
+        Founder of TS Digitais, serving clients with WordPress, Next.js, SEO and digital marketing.
+        Experience evaluating AI interaction quality at Appen/Clickworker.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+
+      <div class="entry">
+        <div class="head"><span class="role">Founder & Web Developer</span><span class="dates">Sep 2020 – Present</span></div>
+        <div class="company">TS Digitais — Florianópolis, SC (Remote)</div>
+        <div class="desc"><ul>
+          <li>Building and maintaining client websites using WordPress, Next.js and Wix</li>
+          <li>SEO optimization, performance improvements and content management</li>
+          <li>Client communication from prospecting to delivery via WhatsApp, email and phone</li>
+          <li>Daily use of AI tools to automate tasks and increase efficiency</li>
+          <li>Developed 8+ production websites generating domain authority for clients</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Data Collector (Freelancer)</span><span class="dates">Jul 2021 – Present</span></div>
+        <div class="company">Appen / Clickworker — Remote</div>
+        <div class="desc"><ul>
+          <li>AI interaction quality evaluation — bot-human conversations for accuracy and tone</li>
+          <li>Content evaluation and data labeling for machine learning models</li>
+          <li>Search result refinement and digital content quality assessment</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Administrative Assistant</span><span class="dates">Apr 2021 – Sep 2021</span></div>
+        <div class="company">Argailha — Florianópolis, SC</div>
+        <div class="desc"><ul>
+          <li>Office and phone support for construction materials company</li>
+          <li>Technical sales consulting</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Social Media (Temp)</span><span class="dates">Sep 2020 – Dec 2020</span></div>
+        <div class="company">Porto Seguro — Florianópolis, SC</div>
+        <div class="desc"><ul>
+          <li>Brand promotion and content creation for social media</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Community Consultant & Sales</span><span class="dates">Jun 2019 – Sep 2020</span></div>
+        <div class="company">Artelustres — Florianópolis, SC</div>
+        <div class="desc"><ul>
+          <li>Client prospecting and support via internet and in-person</li>
+          <li>Social media management and brand promotion</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Sales & Customer Support</span><span class="dates">2011 – 2019</span></div>
+        <div class="company">Emecon Electrical Materials — Caxias do Sul, RS</div>
+        <div class="desc"><ul>
+          <li>In-person, phone and on-site customer support</li>
+          <li>Invoice issuance, inventory management and technical sales</li>
+          <li>Voluntary maintenance of store website outside formal responsibilities</li>
+        </ul></div>
+      </div>
+
+      <div class="entry">
+        <div class="head"><span class="role">Corporal (Brazilian Army)</span><span class="dates">Mar 2007 – Mar 2010</span></div>
+        <div class="company">Brazilian Army — Caxias do Sul, RS</div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
